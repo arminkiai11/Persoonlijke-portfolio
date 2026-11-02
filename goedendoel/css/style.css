@@ -1,0 +1,801 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;
+    min-height: 80vh;
+}
+
+.hero img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.hero-tekst {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0B1739;
+    color: white;
+}
+
+.knop {
+    background-color: #FFD400;
+    color: #0B1739;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+.doneer-knop {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.hero-knoppen {
+    display: flex;
+    gap: 15px;
+}
+
+.missie-foto {
+    width: 40%;
+    height: auto;
+    border-radius: 25px;
+}
+
+section.missie {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.missie-label {
+    font-size: 12px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.kind-alleen {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0B1739;
+}
+
+.tekst-missie {
+    color: rgb(83, 77, 77);
+    line-height: 1.6;
+}
+
+.word-donateur {
+    display: inline-block;
+    background-color: #fff;
+    color: #0B1739;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    width: fit-content;
+    border: 2px;
+    border-color: #0B1739;
+    border-style: solid;
+    margin-top: 30px;
+}
+
+.impact-cijfers {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #0B1739;
+    color: white;
+}
+
+.impact-deel {
+    background-color: #0B1739;
+    color: white;
+    padding: 50px;
+}
+
+.samen-bereiken {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.impact {
+    text-align: center;
+    color: #FFD400;
+}
+
+.impact-cijfers h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.impact-cijfers div {
+    text-align: center;
+    margin: 0 20px;
+    flex: 1;
+    background-color: #0b1f55;
+    border-radius: 10px;
+}
+
+.verhalen-cards {
+    display: flex;
+}
+
+.verhalen-cards div {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #0B1739;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.verhalen-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.wat-doen {
+    text-align: center;
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.programma {
+    color: #0B1739;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.programma-tekst {
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.lees-meer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0B1739;
+    text-decoration: none;
+    background-color: #FFD400;
+    border-radius: 25px;
+    padding: 12px 20px;
+    display: inline-block;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.verhalen {
+    padding: 60px;
+}
+
+.verhaal-card {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #f7f5f2;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.verhaal-card img {
+    width: 40%;
+}
+
+.verhalen-tekst {
+    width: 60%;
+    padding: 40px;
+}
+
+.verhaal-quote {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0B1739;
+}
+
+.verhaal {
+    line-height: 1.6;
+    color: #555;
+}
+
+.naam-tess {
+    font-weight: bold;
+    color: #0B1739;
+    margin-bottom: 0;
+}
+
+.verhalen-label {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ff5a36;
+}
+
+.verhalen-titel {
+    text-align: center;
+    font-size: 36px;
+    color: #0B1739;
+}
+
+.heppie-kampen {
+    font-size: 15px;
+    color: #ff5a36;
+    font-weight: bold;
+}
+
+.donatie {
+    padding: 60px;
+    background-color: #F7F5F2;
+    width: 100%;
+}
+
+.donatie-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.donatie-een,
+.donatie-twee,
+.donatie-drie {
+    flex: 1;
+    border: #5f6165;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.donatie-label {
+    text-align: center;
+    font-size: 16px;
+    color: #ff5a36;
+    font-weight: bolder;
+}
+
+.donatie-titel {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.donatie-bedrag,
+.bedrag,
+.bedrag-drie {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.maandelijkse-donatie,
+.eenmalige-gift,
+.groot-verschil {
+    text-align: center;
+    color: #ff5a36;
+    font-weight: bolder;
+}
+
+.beschrijving-een,
+.beschrijving-twee,
+.beschrijving-drie {
+    text-align: center;
+}
+
+.kiesbedrag-een,
+.kiesbedrag-twee,
+.kiesbedrag-drie {
+    display: block;
+    text-align: center;
+    border: #ff5a36;
+    padding: 10px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ff5a36;
+    margin-top: auto;
+}
+
+.kiesbedrag-twee {
+    background-color: #ff5a36;
+    color: white;
+}
+
+.donatie-twee {
+    border-color: #ff5a36;
+}
+
+.eigen-bedrag {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bedrag-input {
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+
+.volgende-knop {
+    background-color: #ff5a36;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.bedrag-invoer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.cta {
+    background-color: #ff5a36;
+    padding: 50px;
+}
+
+.cta .kind-alleen {
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+}
+
+.hulp-tekst {
+    text-align: center;
+    color: #fff;
+}
+
+.cta-knoppen {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.vrijwilliger-knop {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #fff;
+    color: #ff5a36;
+    padding: 10px;
+}
+
+.nu-doneren-knop {
+    text-decoration: none;
+    color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contact {
+    background-color: #F8F7F5;
+    padding-top: 40px;
+}
+
+.neem-contact {
+    text-align: center;
+    margin-top: 0;
+    font-size: 15px;
+    color: #ff5a36;
+    font-weight: bold;
+}
+
+.laat-horen {
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact-inhoud {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+}
+
+.contact-gegevens {
+    flex: 1;
+}
+
+.contact-formulier {
+    flex: 1;
+    border-color: #c5c2c2;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 12px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contact-formulier form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+}
+
+.contact-formulier input,
+.contact-formulier textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-width: 1px;
+}
+
+form button {
+    color: #fff;
+    background-color: #ff5a36;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 8px;
+    border-color: #ff5a36;
+}
+
+.hoogte {
+    background-color: #FFF4EF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hoogte h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.hoogte p {
+    text-align: center;
+}
+
+.aanmeld-link {
+    display: flex;
+    align-items: center;
+    max-width: 720px;
+    margin: 30px auto 0;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 40px;
+}
+
+.hoogte input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.hoogte button {
+    background-color: #ff5a36;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.inhoud-footer {
+    display: flex;
+    padding: 20px 50px;
+    background-color: #fff
+}
+
+.vgt-kind-logo h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.vgt-kind,
+.over-ons-footer,
+.steun-ons-footer {
+    flex: 1;
+}
+
+.over-ons-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.steun-ons-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.vgt-kind p {
+    color: #6B7280;
+}
+
+.over-ons-footer a {
+    color: #6B7280;
+    text-decoration: none;
+}
+
+.over-ons-footer a:hover {
+    text-decoration: underline;
+}
+
+.over-ons-footer h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.steun-ons-footer a {
+    color: #6B7280;
+    text-decoration: none;
+}
+
+.steun-ons-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-tekst {
+    color: #6B7280;
+    font-size: 12px;
+    display: flex;
+    padding-left: 50px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+
+    font-weight: bolder;
+}
+
+.logo-text {
+    display: block;
+}
+
+header p {
+    color: #ff5a36;
+    font-family: Arial, sans-serif;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 0px 20px;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.doneer-nu-knop {
+    background-color: #ff5a36;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #ff5a36;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+header nav {
+    padding-right: 150px;
+}
+
+header nav a:hover {
+    color: #ff5a36;
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.waarom-aandacht p:first-child{
+    color: #E8652D;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.waarom-aandacht > h2:first-of-type{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+.alle-boxen {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+
+    max-width: 1400px;
+    margin: 80px auto 0;
+    padding: 0 20px;
+}
+
+.een,
+.twee,
+.drie {
+    flex: 1;
+    min-width: 0;
+    padding: 35px;
+    border: 1px solid #E5E0DA;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.een p,
+.twee p,
+.drie p {
+    color: #6B7280;
+}
+
+.waarom-aandacht{
+    padding-bottom: 100px;
+    padding-top: 50px;
+    background-color: #FAF8F6;
+}
+
+.hartje,
+.icoon,
+.icoon-twee {
+    width: 110px;
+    height: 110px;
+    background-color: #FDF0EA;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 30px;
+}
+
+.hartje i,
+.icoon i,
+.icoon-twee i {
+    font-size: 40px;
+    color: #E8652D;
+}
+
+.reviews >p{
+    color: #E8652D;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.reviews >h2{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+.alles {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.review-een,
+.review-twee,
+.review-drie {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.reviews {
+    background-color: #F5EFEB;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.review-een,
+.review-twee,
+.review-drie {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews .sterren{
+    color: #E8652D;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.weer-tweekleuren {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.ervaring-noor{
+    color: #E8652D;
+}
+
+.verhalen-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.euro-teken{
+    padding-left: 10px;
+}
