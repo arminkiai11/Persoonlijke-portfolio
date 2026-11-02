@@ -912,94 +912,79 @@ header nav {
     gap: 0;
 }
 
-.footer-info {
-    max-width: 350px;
+.footer {
+    background-color: #080B16;
+    color: white;
+    padding: 35px 5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.footer-info h3 {
-    color: #F1F5F9;
-    font-size: 20px;
+.footer-inhoud {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 100px;
+}
+
+.footer-info {
+    width: 550px;
+}
+
+.footer-info h2 {
     margin-top: 0;
-    margin-bottom: 10px;
 }
 
 .footer-info p {
     color: #94A3B8;
-    font-size: 13px;
     line-height: 1.6;
 }
 
-.footer-navigatie,
-.footer-socials {
+.footer-navigatie {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
 }
 
-.footer-rechts h4 {
-    color: #F1F5F9;
-    font-size: 11px;
+.footer-navigatie h3 {
+    font-size: 16px;
     margin-top: 0;
-    margin-bottom: 5px;
 }
 
-.footer-rechts a {
+.footer-navigatie a {
     color: #94A3B8;
     text-decoration: none;
-    font-size: 13px;
 }
 
-.footer-rechts a:hover {
-    color: #2563EB;
+.footer-navigatie a:hover {
+    color: white;
 }
 
-.footer-onder p {
-    color: #64748B;
-    font-size: 12px;
+.footer-onderkant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1e293b;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.footer-onderkant p {
+    color: #64748b;
+    font-size: 14px;
 }
 
 .footer-iconen {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 .footer-iconen a {
     color: #94A3B8;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .footer-iconen a:hover {
-    color: #2563EB;
-}
-
-.footer {
-    background-color: #080B16;
-    border-top: 1px solid #1E293B;
-    margin-left: 50px;
-    padding: 40px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.footer-boven {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.footer-rechts {
-    display: flex;
-    gap: 60px;
-}
-
-.footer-onder {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #1E293B;
-    padding-top: 30px;
-    gap: 20px;
+    color: white;
 }
 
 header {
@@ -1011,7 +996,7 @@ header {
 .vaardig {
     background-color: #111625;
     margin: 0;
-    min-height: 100vh;
+    min-height: 70vh;
     padding-top: 10px;
     margin-top: 0;
 }
@@ -1112,7 +1097,7 @@ body {
 }
 
 .kennismaken {
-    background-color: #080b16;
+    background-color: #111625;
     padding: 50px 5% 80px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -1159,4 +1144,93 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #080B16;
+    color: white;
+    padding: 35px 5%;
+}
+
+.footer-inhoud {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 100px;
+}
+
+.footer-info {
+    width: 550px;
+}
+
+.footer-info h2 {
+    margin-top: 0;
+}
+
+.footer-info p {
+    color: #94A3B8;
+    line-height: 1.6;
+}
+
+.footer-navigatie {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-navigatie h3 {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.footer-navigatie a {
+    color: #94A3B8;
+    text-decoration: none;
+}
+
+.footer-navigatie a:hover {
+    color: white;
+}
+
+.footer-onderkant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1e293b;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.footer-onderkant p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.footer-iconen {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-iconen a {
+    color: #94A3B8;
+    font-size: 24px;
+}
+
+.footer-iconen a:hover {
+    color: white;
+}
 
