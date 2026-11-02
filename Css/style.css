@@ -396,6 +396,8 @@ header nav {
     padding-left: 50px;
 }
 
+
+
 .projecten a {
     text-decoration: none;
     color: #94A3B8;
@@ -621,6 +623,8 @@ header nav {
     padding-bottom: 50px;
 }
 
+
+
 .knop-recht p {
     color: #2563EB;
     font-size: 12px;
@@ -686,6 +690,8 @@ header nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
 .naast-elkaar {
     display: flex;
     align-items: center;
@@ -707,20 +713,33 @@ header nav {
     align-items: center;
 }
 
+.naast-elkaar,
 .naast-elkaar-twee {
     display: flex;
-    padding-top: 30px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    padding: 30px 50px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.naast-elkaar-twee>div {
-    padding-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+.naast-elkaar > div,
+.naast-elkaar-twee > div {
+    flex: 0 0 50%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.naast-elkaar-twee:last-child div {
-    margin-right: 80px;
+.naast-elkaar-twee .technische-kennis,
+.naast-elkaar-twee .technische-kennis div {
+    margin-right: 0;
 }
+
+
 
 .in-twee p:first-child {
     color: #fff;
@@ -749,10 +768,7 @@ header nav {
     margin-bottom: 8px;
 }
 
-.in-twee,
-.talen {
-    width: 50%;
-}
+
 
 .talen {
     margin-left: -50px;
@@ -1011,6 +1027,7 @@ body {
     background-color: #111625;
     padding: 60px 5%;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-container {
@@ -1138,6 +1155,7 @@ body {
 .toekomst {
     padding-top: 20px;
 }
+
 
 
 
