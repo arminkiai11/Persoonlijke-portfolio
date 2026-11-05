@@ -390,12 +390,6 @@ header nav {
     font-size: 40px;
 }
 
-.projecten-knoppen {
-    display: flex;
-    gap: 30px;
-    padding-left: 50px;
-}
-
 
 
 .projecten a {
@@ -406,9 +400,6 @@ header nav {
     padding: 8px;
 }
 
-.projecten a:hover {
-    color: #06B6D4;
-}
 
 .box-een img,
 .box-twee img,
@@ -469,7 +460,7 @@ header nav {
 }
 
 .knoppen-a a,
-.bekijk a {
+.bekijk a, {
     display: inline-block;
     white-space: nowrap;
     padding: 8px 12px;
@@ -488,7 +479,7 @@ header nav {
     border-color: #2563EB;
 }
 
-.knoppen-a a:hover,
+.knoppen-a:first-child a:hover,
 .bekijk a:hover {
     color: #fff;
     background-color: #1D4ED8;
@@ -496,8 +487,20 @@ header nav {
     font-size: 16px;
 }
 
+.box-een .bekijk a {
+    background-color: transparent;
+    color: #94A3B8;
+    border: 1px solid #94A3B8;
+}
+
+.box-een .bekijk a:hover,
+.box-twee .deze-ook:hover {
+    background-color: #1E293B;
+    color: white;
+}
+
 .drie-boxen-projecten {
-    padding: 50px 20px 0;
+    padding: 0px 20px 0;
     align-items: stretch;
     display: flex;
     flex-direction: row;
