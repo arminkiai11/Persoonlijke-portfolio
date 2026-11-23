@@ -217,26 +217,26 @@
 
 
 
-<script>
-    const menuKnop = document.querySelector(".menu-knop");
-    const menu = document.querySelector("#hoofdmenu");
+    <script>
+        const menuKnop = document.querySelector(".menu-knop");
+        const menu = document.querySelector("#hoofdmenu");
 
-    menuKnop.addEventListener("click", function() {
-        menu.classList.toggle("open");
+        menuKnop.addEventListener("click", function () {
+            menu.classList.toggle("open");
 
-        const isOpen = menu.classList.contains("open");
+            const isOpen = menu.classList.contains("open");
 
-        menuKnop.setAttribute("aria-expanded", isOpen);
-        menuKnop.setAttribute(
-            "aria-label",
-            isOpen ? "Menu sluiten" : "Menu openen"
-        );
+            menuKnop.setAttribute("aria-expanded", isOpen);
+            menuKnop.setAttribute(
+                "aria-label",
+                isOpen ? "Menu sluiten" : "Menu openen"
+            );
 
-        menuKnop.querySelector("i").className = isOpen
-            ? "fa-solid fa-xmark"
-            : "fa-solid fa-bars";
-    });
-</script>
+            menuKnop.querySelector("i").className = isOpen
+                ? "fa-solid fa-xmark"
+                : "fa-solid fa-bars";
+        });
+    </script>
 
 
 

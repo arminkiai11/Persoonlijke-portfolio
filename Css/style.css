@@ -304,6 +304,9 @@ body {
 
 }
 
+header nav .menu-knop {
+    display: none;
+}
 
 header ul {
     justify-content: center;
@@ -332,6 +335,13 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a.active {
+    color: #fff;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+header ul li a:hover,
+header ul li a.active2 {
     color: #fff;
     transform: scale(1.1);
     display: inline-block;
