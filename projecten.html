@@ -14,6 +14,7 @@
     <header>
         <nav>
             <a href="#" class="logo"> <span>Armin Kiai</span></a>
+             <button class="menu-knop" onclick="toggleMenu()">☰</button>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -74,7 +75,7 @@
                     <a class="deze-ook" href="https://github.com/arminkiai11/Non-profit-Website" target="_blank">Bekijk code</a>
                 </div>
             </div>
-
+        </div>
 
     </section>
 
@@ -105,6 +106,13 @@
         </div>
 
     </footer>
+
+
+<script>
+    function toggleMenu() {
+        document.querySelector("header ul").classList.toggle("open");
+    }
+</script>
 
 </body>
 

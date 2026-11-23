@@ -2,6 +2,309 @@ body {
     margin: 0;
 }
 
+
+/* Telefoon */
+@media (max-width: 768px) {
+    /* Mobiele navigatie */
+
+    header nav:has(.menu-knop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    header nav .menu-knop {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 100%;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    header nav ul.open {
+        display: flex;
+    }
+
+    header nav .contact-knop {
+        display: none;
+    }
+
+
+    /* Introductie */
+    /* homepage */
+
+    section.boven>div:first-child {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: 0 1 auto;
+    }
+
+    section.boven img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    section .project-container img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .boven {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .boven div:first-child {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .boven p:first-child,
+    .boven h1,
+    .stukje-tekst {
+        padding-left: 0;
+    }
+
+
+    .boven h1 {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .stukje-tekst {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .boven img {
+        width: 100%;
+        height: auto;
+    }
+
+    .knop-bekijk {
+        margin-left: 0;
+    }
+
+    /* Uitgelicht project */
+    .goedendoel-app-intro {
+        padding: 40px 20px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-container img {
+        width: 100%;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .project-info p {
+        font-size: 16px;
+    }
+
+    .project-knoppen {
+        flex-wrap: wrap;
+    }
+
+    /* Achtergrond */
+    .knop-recht h2,
+    .knop-recht p {
+        padding-left: 20px;
+    }
+
+    .naast-elkaar,
+    .naast-elkaar-twee {
+        flex-direction: column;
+        padding: 20px;
+        gap: 25px;
+    }
+
+    .naast-elkaar>div,
+    .naast-elkaar-twee>div {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .opleidingen {
+        margin-left: 0;
+    }
+
+    /* Footer */
+    .footer-inhoud {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-info {
+        width: 100%;
+    }
+
+    .footer-onderkant {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+
+    .sectie-twee .wiebenik {
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .sectie-twee .vrachtwagenfoto {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .sectie-twee .na-foto {
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 0;
+    }
+
+    .sectie-twee .interesses4 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section.sectie-twee {
+        padding-bottom: 10px;
+    }
+
+    section .wie-ben-ik {
+        padding-left: 20px;
+    }
+
+    section .over-mij1 {
+        padding-left: 20px;
+    }
+
+    section .vaardigheden {
+        flex-direction: column;
+    }
+
+    section .tekst-boven h2 {
+        font-size: 32px;
+    }
+
+    body .vaardig {
+        padding-bottom: 30px;
+    }
+
+    footer .footer-inhoud {
+        flex-direction: column;
+    }
+
+    /* mijn ontwikkeling pagina */
+
+    body .ontwikkeling h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    section.ontwikkeling .september,
+    section.ontwikkeling .oktober {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    section.ontwikkeling .september .box,
+    section.ontwikkeling .oktober .box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    section.ontwikkeling {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* projecten */
+
+    body .projecten h2 {
+        font-size: 24px;
+        font-weight: bolder;
+    }
+
+    section.projecten .drie-boxen-projecten {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%;
+    }
+
+    section.projecten .drie-boxen-projecten .box-een,
+    section.projecten .drie-boxen-projecten .box-twee {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        flex: none;
+        box-sizing: border-box;
+    }
+
+    section.projecten .drie-boxen-projecten img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    section.projecten .projecten-labels,
+    section.projecten .symbolen,
+    section.projecten .knoppen-a {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    /* contact pagina */
+
+    body .contact h2{
+        font-size: 24px;
+    }
+
+
+}
+
+
 header ul {
     justify-content: center;
     display: flex;
@@ -27,11 +330,13 @@ header ul li a {
     color: #94A3B8;
 }
 
-header ul li a:hover {
+header ul li a:hover,
+header ul li a.active {
     color: #fff;
     transform: scale(1.1);
     display: inline-block;
 }
+
 
 header nav {
     display: flex;
@@ -460,7 +765,7 @@ header nav {
 }
 
 .knoppen-a a,
-.bekijk a, {
+.bekijk a {
     display: inline-block;
     white-space: nowrap;
     padding: 8px 12px;
@@ -728,8 +1033,8 @@ header nav {
     box-sizing: border-box;
 }
 
-.naast-elkaar > div,
-.naast-elkaar-twee > div {
+.naast-elkaar>div,
+.naast-elkaar-twee>div {
     flex: 0 0 50%;
     width: 50%;
     box-sizing: border-box;
@@ -1237,3 +1542,50 @@ body {
     color: white;
 }
 
+
+
+
+
+
+
+/* Algemene instellingen */
+* {
+    box-sizing: border-box;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    header nav {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .boven h1 {
+        font-size: 36px;
+    }
+
+    .project-container {
+        gap: 20px;
+    }
+
+    .footer-inhoud {
+        gap: 30px;
+    }
+
+    .footer-info {
+        max-width: 100%;
+    }
+
+    .menu-knop {
+        display: none;
+    }
+
+
+
+
+}
