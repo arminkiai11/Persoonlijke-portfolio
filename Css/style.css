@@ -17,7 +17,7 @@ body {
         gap: 10px;
     }
 
-    header nav .menu-knop {
+    header nav button.menu-knop {
         display: block;
         background: transparent;
         border: none;
